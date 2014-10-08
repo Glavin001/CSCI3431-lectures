@@ -83,16 +83,20 @@ Synchronization primitives to build multi-threaded code
   
 ##Terminology  
   
-Critical Section  
+### Critical Section  
+  [In concurrent programming, a critical section is a piece of code that accesses a shared resource (data structure or device) that must not be concurrently accessed by more than one thread of execution.](http://en.wikipedia.org/wiki/Critical_section)
+
+### Race Condition  
+  [A race condition occurs when two or more threads can access shared data and they try to change it at the same time. Because the thread scheduling algorithm can swap between threads at any time, you don't know the order in which the threads will attempt to access the shared data. Therefore, the result of the change in data is dependent on the thread scheduling algorithm, i.e. both threads are "racing" to access/change the data.](http://stackoverflow.com/a/34550/2578205)
   
-Race Condition  
+### Indeterminate
+
+
+### Deterministic  
+  [In mathematics and physics, a deterministic system is a system in which no randomness is involved in the development of future states of the system. A deterministic model will thus always produce the same output from a given starting condition or initial state.](http://en.wikipedia.org/wiki/Deterministic_system)
   
-Indeterminate / Deterministic  
-  
-Mutual Exclusion  
-  
-  
-  
+### Mutual Exclusion  
+  [Mutual exclusion refers to the requirement of ensuring that no two concurrent processes are in their critical section at the same time; it is a basic requirement in concurrency control, to prevent race conditions.](http://en.wikipedia.org/wiki/Mutual_exclusion)
   
   
   
