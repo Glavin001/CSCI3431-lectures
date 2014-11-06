@@ -62,6 +62,20 @@ main(int argc, char *argv[]) {
 }
 ```
 
+### Tracing `S`
+
+| S | Parent | Child
+|---|---|---|
+| 0 | sem_init | |
+| 0 | create thread | |
+| -1 | sem_wait(sleeping) | |
+| -1 | | print |
+| 0 | | sem_post |
+| 0 | | return |
+| 0 | print | |
+
+
+
 Producer Consumer
 -----------------
 
